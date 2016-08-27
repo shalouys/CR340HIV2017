@@ -26,22 +26,22 @@ module.exports = function(grunt) {
 				banner: '<%= meta.banner %>\n'
 			},
 			build: {
-				src: 'js/reveal.js',
-				dest: 'js/reveal.min.js'
+				src: 'lib/revealjs/js/reveal.js',
+				dest: 'lib/revealjs/js/reveal.min.js'
 			}
 		},
 
 		sass: {
 			core: {
 				files: {
-					'css/reveal.css': 'css/reveal.scss',
+					'lib/revealjs/css/reveal.css': 'css/reveal.scss',
 				}
 			},
 			themes: {
 				files: [
 					{
 						expand: true,
-						cwd: 'css/theme/source',
+						cwd: 'lib/revealjs/css/theme/source',
 						src: ['*.scss'],
 						dest: 'css/theme',
 						ext: '.css'
@@ -52,14 +52,14 @@ module.exports = function(grunt) {
 
 		autoprefixer: {
 			dist: {
-				src: 'css/reveal.css'
+				src: 'lib/revealjs/css/reveal.css'
 			}
 		},
 
 		cssmin: {
 			compress: {
 				files: {
-					'css/reveal.min.css': [ 'css/reveal.css' ]
+					'lib/revealjs/css/reveal.min.css': [ 'css/reveal.css' ]
 				}
 			}
 		},
@@ -86,7 +86,7 @@ module.exports = function(grunt) {
 					exports: false
 				}
 			},
-			files: [ 'Gruntfile.js', 'js/reveal.js' ]
+			files: [ 'Gruntfile.js', 'lib/revealjs/js/reveal.js' ]
 		},
 
 		connect: {
@@ -114,15 +114,15 @@ module.exports = function(grunt) {
 
 		watch: {
 			js: {
-				files: [ 'Gruntfile.js', 'js/reveal.js' ],
+				files: [ 'Gruntfile.js', 'lib/revealjs/js/reveal.js' ],
 				tasks: 'js'
 			},
 			theme: {
-				files: [ 'css/theme/source/*.scss', 'css/theme/template/*.scss' ],
+				files: [ 'lib/revealjs/css/theme/source/*.scss', 'lib/revealjs/css/theme/template/*.scss' ],
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'lib/revealjs/css/reveal.scss' ],
 				tasks: 'css-core'
 			},
 			html: {
