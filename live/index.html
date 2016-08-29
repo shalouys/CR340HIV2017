@@ -5,15 +5,7 @@
 <head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>CR340 - Cours 1</title>
 
 		<link rel="stylesheet" href="/lib/revealjs/css/reveal.css">
 		<link rel="stylesheet" href="/lib/revealjs/css/theme/black.css" id="theme">
@@ -41,14 +33,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-markdown="content.md"
-		         data-separator="^---\n"
-		         data-separator-vertical="^--\n"
-		         data-separator-notes="^Note:"
-		         data-charset="UTF-8">
-		</section>
-      </div>
-</div>
+
 
 <script src="/lib/revealjs/lib/js/head.min.js"></script>
 		<script src="/lib/revealjs/js/reveal.js"></script>
@@ -75,3 +60,23 @@
 
 	</body>
 </html>
+
+
+Reveal.initialize({
+    // other options...
+
+    multiplex: {
+        // Example values. To generate your own, see the socket.io server instructions.
+        secret: null, // null so the clients do not have control of the master presentation
+        id: '1ea875674b17ca76', // id, obtained from socket.io server
+        url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
+    },
+
+    // Don't forget to add the dependencies
+    dependencies: [
+        { src: '//cdn.socket.io/socket.io-1.3.5.js', async: true },
+        { src: 'plugin/multiplex/client.js', async: true }
+
+        // other dependencies...
+    ]
+});
