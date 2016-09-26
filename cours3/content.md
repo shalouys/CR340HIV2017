@@ -12,8 +12,8 @@
 Le BIOS (Basic Input/Output System) est une composante matérielle qui sert
  d'interface entre le processeur et le matériel de l'ordinateur.  Le BIOS inclus
  un environnement d'exécution qui est activé au démarrage de l'ordinateur.  Le
-BIOS implémente aussi certaine fonctionalités d'accès au matériel, qui peuvent
-être remplacé par des fonctionalité du *bootloader* ou noyaux
+BIOS implémente aussi certaines fonctionnalités d'accès au matériel, qui peuvent
+être remplacés par des fonctionnalités du *bootloader* ou noyaux
 
 --
 ## BIOS
@@ -22,11 +22,11 @@ BIOS implémente aussi certaine fonctionalités d'accès au matériel, qui peuve
 --
 ## Registre
 
-Les registres sont des espaces mémoire intégré à même le processeur.  La
-quantité de mémoire dans un registre est égal à la longeur d'un mot (8, 16, 32
+Les registres sont des espaces mémoire intégrés à même le processeur.  La
+quantité de mémoire dans un registre est égale à la longueur d'un mot (8, 16, 32
 ou 64-bit) dans l'architecture système.  Les registres sont les seuls espaces
 mémoire pouvant être accédés directement par le processeur (à moins d'utiliser
-des fonctionalités avancées).
+des fonctionnalités avancées).
 --
 ## Registres x86 - Registres généraux
 
@@ -53,18 +53,18 @@ des fonctionalités avancées).
 Dépendant du type de processeur sur lequel notre assembleur fonctionne
 le représentation en mémoire peut être différente.
 
-Les processeur de gamme Intel x86 sont petit-boutisme (little endian) donc la lecture en mémoire se fait comme ceci `A0 B7 07 08` est sauvegardé en mémoire en comme suit:
+Les processeurs de gamme Intel x86 sont petit-boutisme (little endian) donc la lecture en mémoire se fait comme ceci `A0 B7 07 08` est sauvegardé en mémoire en comme suit:
 
 ```
-    0    1    2    3
+       0    1    2    3
 ...    08    07    B7    A0    ...
 
 ```
 
-Par contre en big endian la même valeur serait enregistré comme suit:
+Par contre en big endian la même valeur serait enregistrée comme suit:
 
 ```
-    0    1    2    3
+        0    1    2    3
 ...    A0    B7    07    08    ...
 ```
 ---
@@ -74,23 +74,23 @@ Par contre en big endian la même valeur serait enregistré comme suit:
 
 Le langage assembleur fait une correspondance entre les opérations machines du
 processeur et un langage textuelle.  Ainsi, le langage assembleur à une
-quantitée limitée d'instructions.
+quantité limitée d'instructions.
 --
 ## Instructions
 
 * `mov`: Copie des données de mémoire à un registre, ou vice-versa
 *`add`: Additionne une constante à un registre
-*`jmp`: Déplace le pointeur d'exécution vers une addresse donnée
-*`je`: Déplace le pointeur d'exécution vers une addresse donnée, si l'instructionprécédente était vraie
+*`jmp`: Déplace le pointeur d'exécution vers une adresse donnée
+*`je`: Déplace le pointeur d'exécution vers une adresse donnée, si l'instructionprécédente était vraie
 * `cmp`: Compare la valeur d'un registre avec une constante
 --
 ## Interruptions
 
-Une interruption est une action qui interrompt temporairement l'execution du programme courant et donne la priorité à un autre segment de code (appelé *interrupt handler*).  Les interruptions sont utilisé pour effectuer des tâches urgentes.  Les interruptions sont implémenté au niveau matériel.
+Une interruption est une action qui interrompt temporairement l'exécution du programme courant et donne la priorité à un autre segment de code (appelé *interrupt handler*).  Les interruptions sont utilisées pour effectuer des tâches urgentes.  Les interruptions sont implémentées au niveau matériel.
 --
 ## Pile (Stack)
 
-Une pile des une structure de donnée ou les donnée sont écrite dans un ordre et lues dans l'ordre inverse (FILO).  Une pile est utilisé pour stocker des données temporaires (par exemple, des addresses de retour de fonction).
+Une pile est une structure de donnée ou les données sont écrites dans un ordre et lues dans l'ordre inverse (FILO).  Une pile est utilisée pour stocker des données temporaires (par exemple, des adresses de retour de fonction).
 
 ---
 # Le démarrage
@@ -99,10 +99,10 @@ Une pile des une structure de donnée ou les donnée sont écrite dans un ordre 
 
 * L'ordinateur initialise le BIOS
 * Le BIOS démarre le processus de vérification matériel (POST)
-* En utilisant l'ordre configuré dans le BIOS, l'ordinateur lit les 512 premier octets de chacun des disques
-* Si les deux dernier octets d'un disque sont `Ox55 0xAA`, le disque est considéré démarrable.
-* Si le disque est démarrable, le premier secteur du disque est copié en mémoire à l'addresse `0x7C00`
-* Le BIOS transfert le contrôle au code contenu dans le secteur (`jmp 7c00h`)
+* En utilisant l'ordre configuré dans le BIOS, l'ordinateur lit les 512 premiers octets de chacun des disques
+* Si les deux derniers octets d'un disque sont `Ox55 0xAA`, le disque est considéré démarrable.
+* Si le disque est démarrable, le premier secteur du disque est copié en mémoire à l'adresse `0x7C00`
+* Le BIOS transfère le contrôle au code contenu dans le secteur (`jmp 7c00h`)
 
 ---
 # Le bootloader
