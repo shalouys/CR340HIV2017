@@ -7,7 +7,7 @@
 ---
 # Concepts - Composantes matérielles
 --
-# BIOS
+## BIOS
 
 Le BIOS (Basic Input/Output System) est une composante matérielle qui sert
  d'interface entre le processeur et le matériel de l'ordinateur.  Le BIOS inclus
@@ -16,7 +16,7 @@ BIOS implémente aussi certaine fonctionalités d'accès au matériel, qui peuve
 être remplacé par des fonctionalité du *bootloader* ou noyaux
 
 --
-# BIOS
+## BIOS
 
 ![bios](images/bios.jpg)
 --
@@ -47,6 +47,26 @@ des fonctionalités avancées).
 * `IP`: Pointeur vers la prochaine instruction
 * `SP`: Pointeur vers l'item du haut de la pile
 * `SI`: Contient un pointeur vers la source mémoire actuelle
+--
+## Boutisme (Endianness)
+
+Dépendant du type de processeur sur lequel notre assembleur fonctionne
+le représentation en mémoire peut être différente.
+
+Les processeur de gamme Intel x86 sont petit-boutisme (little endian) donc la lecture en mémoire se fait comme ceci `A0 B7 07 08` est sauvegardé en mémoire en comme suit:
+
+```
+    0    1    2    3
+...    08    07    B7    A0    ...
+
+```
+
+Par contre en big endian la même valeur serait enregistré comme suit:
+
+```
+    0    1    2    3
+...    A0    B7    07    08    ...
+```
 ---
 # Concepts - Langage assembleur
 --
