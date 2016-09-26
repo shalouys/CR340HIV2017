@@ -23,20 +23,23 @@ Fonctionnalités recherchées:
 * Prformance
 * Focus minimalisation des fonctionnalités
 * Integration aux hyperviseurs et conteneriseurs
+
 *Exemples*: Windows 2012, Linux
 --
-## Systène d'exploitation poste de travail
+## Systèmes d'exploitation poste de travail
 Fonctionnalités recherchées:
 * Facilité d'utilisation
 * Convivialité de l'interface graphique
 * Intégration de fonctionnalités
 * Support matériel
+
 *Exemples*: Windows 10, Max OS X
 --
 ## Systèmes d'exploitation mobiles:
 Fonctionnalités recherchées:
 * Facilité d'utilisation
 * Support d'application
+
 *Exemples*: Android, IOS
 --
 ## Systèmes d'exploitation embarqués
@@ -44,6 +47,7 @@ Fonctionnalités recherchées:
 * Minimisation de la taille
 * API d'accès direct au matériel
 * Performance
+
 *Exemples*: RealRTOS, MBED
 ---
 # Linux
@@ -155,7 +159,7 @@ De manière additionnelle, on peut installer un gestionnaire de logiciel sur Mac
 --
 ## Machines virtuelles
 * ubuntu: Ubtuntu 16.04 Xenial
-* centos: Centox 7
+* centos: Centos 7
 * windows: Windows 2012 R2 Standard
 * osx: Mac OS X El Capitan
 --
