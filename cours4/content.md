@@ -6,7 +6,8 @@
 
 ---
 # Qu'est-ce qu'un noyau?
-
+--
+Le noyau est l'élément central d'un système d'exploitation.  Le noyau sert d'interface et de couche d'abstraction entre les applications et le matériel de l'ordinateur.
 
 ---
 ## Les interpréteurs de commande
