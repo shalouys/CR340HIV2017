@@ -6,18 +6,11 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 
-file_to_disk = './second_disk.vdi'
-
-
 config.vm.define "ubuntu" do |ubuntu|
 
   ubuntu.vm.box = "ubuntu/xenial64"
   ubuntu.vm.network "private_network", ip: "192.168.44.20", auto_config: false
   ubuntu.vm.hostname = "ubuntu"
-  ubuntu.vm.provider "virtualbox" do |v|
-    v.customize ['createhd', '--filename', file_to_disk, '--size', 50 * 1024]
-    v.customize ['storageattach', :id, '--storagectl', 'SCSI', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file_to_disk]
-  end
   ubuntu.vm.synced_folder '.', '/vagrant', disabled: true
   ubuntu.vm.provision "shell", inline: "apt-get update && apt-get -y install nasm qemu-kvm gdb git build-essential libncurses5-dev && apt-get -y build-dep linux-image-$(uname -r) && git clone git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial"
 
