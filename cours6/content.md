@@ -52,9 +52,17 @@ shmdt()
 # Les systèmes de fichier
 --
 ## Qu'est-ce qu'un système de fichier?
+Un système de fichier est une représentation hierarchique du contenu d'un appareil de stockage.  Le système de fichier est responsable de structurer l'information sur l'appareil de stockage et le représenter à l'utilisateur d'une manière standard.
 --
-
 ## Permissions Posix
+![perms](images/chmod.jpg)
+
+(source: linuxsecrets.com)
+--
+## Liens
+Posix permet de créer des liens.  Deux types de liens existent:
+* Liens dur (*hard link*): Le système de fichier pointe directement vers le même contenu.  Dans ce cas, un seul fichier existe
+* Liens symboliques (*symlinks*): Un fichier spécial est créé sur le système de fichier pointant vers la cible du liens. Dans ce cas, deux fichiers existent.
 --
 ## Système de fichier virtuel
 Le système de fichier virtuel est une extension au systèmes de fichiers Linux qui permettent d'accéder à de l'information sur le système de la même manière que
@@ -77,7 +85,7 @@ Le répertoire /proc contient de l'information sur l'état actuel du système.  
 Un signal est un mécanisme simple de communication inter-processus.  Linux définie 30 signaux, utiisé pour des raisons variables, pouvant être envoyé par le noyau ou par d'autre processus.  Les processus ne continennent aucun arguments et sont utilisé de manière similaire aux interruptions matérielles.
 --
 ## Gestionnaire de signal
-
+Un processus peut redéfinir la manière de répondre à un signal.  Une fonction qui est appelée dans le cas de la réception d'un signal est nommée gestionnaire de signal (*signal handler*)
 
 --
 ## Signaux Linux
@@ -141,21 +149,24 @@ Un signal est un mécanisme simple de communication inter-processus.  Linux déf
 #include<signal.h>
 #include<unistd.h>
 
-void sig_handler(int signo)
+void sig_handler_sigint(int signo)
 {
   if (signo == SIGINT)
     printf("received SIGINT\n");
+}
 
+void sig_handler_sigusr1(int signo)
+{
   if (signo == SIGUSR1)
-    printf("received SIGINT\n");
+    printf("received SIGUSR1\n");
 }
 
 int main(void)
 {
-  if (signal(SIGINT, sig_handler) == SIG_ERR)
+  if (signal(SIGINT, sig_handler_sigint) == SIG_ERR)
     printf("\ncan't catch SIGINT\n");
 
-    if (signal(SIGUSR1, sig_handler) == SIG_ERR)
+    if (signal(SIGUSR1, sig_handler_sigusr1) == SIG_ERR)
       printf("\ncan't catch SIGUSR1\n");
   while(1)
     sleep(1);
@@ -169,7 +180,7 @@ int main(void)
 Un processus est une image binaire contenant du code en cours d'exécution.  Chaque processus possède une table de descripteurs et une table de pages de mémoire virtuelle.
 --
 ## Planificateur de tâches
-Le planificateur de tâche à la responsabilité de partager les ressources systèmes entre les différents processus.  Le planificateur de tâche analyse la demande en temps CPU et en resources d'entrée/sortie des diff/rents processus et décide l'ordre d'exécution de ceux-ci.  Le `load average`permet de savoir combien de processus était en attente d'éxécution dans les derniers 1, 5 et 15 minutes.  
+Le planificateur de tâche à la responsabilité de partager les ressources systèmes entre les différents processus.  Le planificateur de tâche analyse la demande en temps CPU et en resources d'entrée/sortie des diff/rents processus et décide l'ordre d'exécution de ceux-ci.  Le `load average`permet de savoir combien de processus était en attente d'éxécution dans les derniers 1, 5 et 15 minutes.
 --
 ## Priorités
 Les processus peuvent avoir différents niveau de priorité.  Le niveau de priorité est fixé à l'aide de la commande `nice dans Linux.  Le niveau de priorité affecte le comportement du planificateur de tâches lorsque les processus demande plus de ressource que disponible.
