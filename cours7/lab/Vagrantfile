@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+
+config.vm.define "ubuntu" do |ubuntu|
+
+  ubuntu.vm.box = "ubuntu/xenial64"
+  ubuntu.vm.network "private_network", ip: "192.168.44.20", auto_config: false
+  ubuntu.vm.hostname = "ubuntu"
+  ubuntu.vm.synced_folder '.', '/vagrant', disabled: true
+  ubuntu.vm.provision "shell", inline: "apt-get update && apt-get -y install nasm qemu-kvm gdb git build-essential libncurses5-dev && apt-get -y build-dep linux-image-$(uname -r) && git clone git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial"
+
+end
+
+config.vm.define "windows" do |windows|
+   windows.vm.box = "opentable/win-2012r2-standard-amd64-nocm"
+   windows.vm.network "private_network", ip: "192.168.44.22", auto_config: false
+   windows.vm.hostname = "w2k12"
+   windows.vm.synced_folder '.', '/vagrant', disabled: true
+end
+
+end
