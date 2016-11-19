@@ -12,7 +12,7 @@ dependencies:
 test:
   override:
     # No tests
-    - /usr/bin/true
+    - /bin/true
 
 deployment:
     prod:
