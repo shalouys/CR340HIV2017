@@ -174,7 +174,7 @@ int main(void)
 }
 ```
 ---
-# Muli-tâche
+# Multi-tâche
 --
 ## Processus
 Un processus est une image binaire contenant du code en cours d'exécution.  Chaque processus possède une table de descripteurs et une table de pages de mémoire virtuelle.
