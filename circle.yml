@@ -19,4 +19,4 @@ deployment:
         branch: master
         commands:
         # deploy to GCS
-        - gsutil -m -o rsync -R -x "\.*" . gs://cr340.patl.io
+        - gsutil -m -o rsync -r -x "\.*" . gs://cr340.patl.io
