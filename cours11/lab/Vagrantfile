@@ -6,13 +6,13 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 
-config.vm.define "centos" do |ubuntu|
+config.vm.define "ubuntu" do |ubuntu|
 
-  ubuntu.vm.box = "centos/7"
-  ubuntu.vm.network "private_network", ip: "192.168.44.20", auto_config: true
-  ubuntu.vm.hostname = "centos"
+  ubuntu.vm.box = "ubuntu/xenial64"
+  ubuntu.vm.network "private_network", ip: "192.168.44.20", auto_config: false
+  ubuntu.vm.hostname = "ubuntu"
   ubuntu.vm.synced_folder '.', '/vagrant', disabled: true
-  ubuntu.vm.provision "shell", inline: "yum update && yum install -y httpd vsftpd policycoreutils policycoreutils-python selinux-policy selinux-policy-targeted libselinux-utils setroubleshoot-server setools setools-console mcstrans && useradd -c \"Regular User\" regularuser && echo patate | passwd regularuser --stdin && useradd -c \"Switched User\" switcheduser && echo patate | passwd switcheduser --stdin && useradd -c \"Guest User\" guestuser && echo patate | passwd guestuser --stdin && useradd -c \"Restricted Role User\" restricteduser && echo patate | passwd restricteduser --stdin"
+  ubuntu.vm.provision "shell", inline: "apt-get update && apt-get -y install nasm qemu-kvm gdb git build-essential libncurses5-dev && apt-get -y build-dep linux-image-$(uname -r) && git clone git://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux/+git/xenial"
 
 end
 
