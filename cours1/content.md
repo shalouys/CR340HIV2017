@@ -12,15 +12,14 @@
 ---
 ## Patrick Lécuyer
 
- VP Architecure Sécurité - IaaS et PaaS - Morgan Stanley
+ VP Architecure Sécurité - Morgan Stanley
 
-18 ans d'expérience en TI dans différentes industries
+11 ans d'expérience en TI dans différentes industries
 
-- Cirque du Soleil
-- Domtar
-- Banque Nationale
-- Banque Laurentienne
-- Valeurs Mobilières Desjardins
+- Bell
+- L'Oréal
+- Groupe Pages Jaunes
+- IBM
 
 --
 
@@ -28,13 +27,11 @@
 
 Après le cours: 15 minutes
 
-Par courriel: [patrick.lecuyer@polymtl.ca](mailto:patrick.lecuyer@polymtl.ca) - Prevoir 48 heures
+Par courriel: [arsho.toubi@polymtl.ca](mailto:arsho.toubi@polymtl.ca) - Prevoir 48 heures
 
 Slack: [cr340.slack.com](https://cr340.slack.com)
 
-Twitter: [@patricklecuyer](https://twitter.com/patricklecuyer)
-
-LinkedIn: https://ca.linkedin.com/in/patricklecuyer
+Twitter: [@arsho](https://twitter.com/arsho)
 
 ---
 
