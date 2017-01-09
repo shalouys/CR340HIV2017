@@ -62,14 +62,14 @@ Twitter: [@arsho](https://twitter.com/arsho)
 |Quiz|Date|
 |-----|-------|
 |1| 6 février|
-|2| 13 mars|
+|2| 27 février|
 |3| 3 avril|
 --
 ## Travail de session
 
 Travail pratique à développement lié au laboratoire.
 
-**Présentation du travail**: 20 mars
+**Présentation du travail**: 13 mars
 
 **Date de remise**: 10 avril
 
