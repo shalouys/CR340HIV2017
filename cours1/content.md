@@ -10,17 +10,16 @@
 
 <!--.slide: data-transition="zoom-in slide-out" -->
 ---
-## Patrick Lécuyer
+## Arsho Toubi
 
- VP Architecure Sécurité - IaaS et PaaS - Morgan Stanley
+ VP Architecure Sécurité - Morgan Stanley
 
-18 ans d'expérience en TI dans différentes industries
+11 ans d'expérience en TI dans différentes industries
 
-- Cirque du Soleil
-- Domtar
-- Banque Nationale
-- Banque Laurentienne
-- Valeurs Mobilières Desjardins
+- Bell
+- L'Oréal
+- Groupe Pages Jaunes
+- IBM
 
 --
 
@@ -28,13 +27,11 @@
 
 Après le cours: 15 minutes
 
-Par courriel: [patrick.lecuyer@polymtl.ca](mailto:patrick.lecuyer@polymtl.ca) - Prevoir 48 heures
+Par courriel: [arsho.toubi@polymtl.ca](mailto:arsho.toubi@polymtl.ca) - Prevoir 48 heures
 
 Slack: [cr340.slack.com](https://cr340.slack.com)
 
-Twitter: [@patricklecuyer](https://twitter.com/patricklecuyer)
-
-LinkedIn: https://ca.linkedin.com/in/patricklecuyer
+Twitter: [@arsho](https://twitter.com/arsho)
 
 ---
 
@@ -64,17 +61,17 @@ LinkedIn: https://ca.linkedin.com/in/patricklecuyer
 
 |Quiz|Date|
 |-----|-------|
-|1| 17 septembre|
-|2| 17 octobre|
-|3| 14 novembre|
+|1| 6 février|
+|2| 13 mars|
+|3| 3 avril|
 --
 ## Travail de session
 
 Travail pratique à développement lié au laboratoire.
 
-**Présentation du travail**: 3 octobre
+**Présentation du travail**: 20 mars
 
-**Date de remise**: 5 décembre
+**Date de remise**: 10 avril
 
 
 *Note:  Date sujette à changement dépendant de l'évolution de la session *
@@ -91,7 +88,7 @@ Travail pratique à développement lié au laboratoire.
 * Groupe 01: Montréal
 * Groupe 11: Québec
 
-** Date de l'examen**: 12 décembre
+** Date de l'examen**: 24 avril
 
 --
 #Laboratoires
@@ -107,10 +104,6 @@ Travail pratique à développement lié au laboratoire.
 ## Moodle
 
 Site standard Moodle de Polytechnique. Ce site sera utilisé pour les devoirs, les remises de laboratoires, l'accès a via et l'accès aux fichiers du cours.  Une version PDF des notes de cours sera aussi disponible pour chaque séance de cours.
-
---
-## Notes en ligne
-Une version interactive des notes de cours peut être trouvée en tout temps sur cr340.patl.io.  Durant le cours, cette version en ligne est synchronisée avec les notes présentées sur Via.
 --
 ## Slack
 
