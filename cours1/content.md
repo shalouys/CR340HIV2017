@@ -61,9 +61,9 @@ Twitter: [@arsho](https://twitter.com/arsho)
 
 |Quiz|Date|
 |-----|-------|
-|1| 6 février|
-|2| 27 février|
-|3| 3 avril|
+|1| 23 janvier|
+|2| 13 février|
+|3| 20 mars|
 --
 ## Travail de session
 
