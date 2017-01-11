@@ -12,9 +12,9 @@
 ---
 ## Arsho Toubi
 
- VP Architecure Sécurité - Morgan Stanley
+ VP Architecture Sécurité - Morgan Stanley
 
-11 ans d'expérience en TI dans différentes industries
+12 ans d'expérience en TI dans différentes industries
 
 - Bell
 - L'Oréal
