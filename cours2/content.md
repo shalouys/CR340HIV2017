@@ -20,7 +20,7 @@
 ## Systèmes d'exploitation serveur
 Fonctionnalités recherchées:
 * Sécurité
-* Prformance
+* Performance
 * Focus minimalisation des fonctionnalités
 * Integration aux hyperviseurs et conteneriseurs
 
@@ -124,9 +124,9 @@ Trois méthodes existent pour installer des logiciels dans Windows:
 ## Versions
 Max OS X existe seulement en version poste de travail, avec un module Serveur optionnel ajoutant certaines fonctionnalités.
 
-La version actuelle de Mac OS X et El Capitan (10.11.6)
+La version actuelle de Mac OS X est Sierra, 10.12.0
 
-Mac OS X suit un cycle de sortie d'un an, la prochaine version (Sierra, 10.12.0) étant prévue le 20 septembre 2016.
+Mac OS X suit un cycle de sortie d'un an.
 --
 ## Structure de répertoire
 
@@ -135,7 +135,7 @@ La structure de répertoire de Mac OS X est basée sur BSD est très similaire �
 * `/`: Racine du système
 * `/etc`: Fichiers de configuration
 * `/dev`: Fichier d'accès au matériel
-* `/Applications`: Répertoire d'installtion des applications
+* `/Applications`: Répertoire d'installation des applications
 * `/bin`: fichiers binaires exécutables systèmes
 * `/sbin`: fichiers binaires statiques exécutables système
 * `/Library`: bibliothèque systèmes
@@ -149,6 +149,8 @@ La structure de répertoire de Mac OS X est basée sur BSD est très similaire �
 ## Gestion des logiciels
 
 Mac OS X permet l'installation manuelle d'application, soit à l'aide d'un fichier installeur (si il y a des dépendances ou bibliothèques) ou en copiant directement l'application dans le répertoire `/Applications` (pour les applications individuelles)
+
+On peut installer des logiciels à travers l'app store.
 
 De manière additionnelle, on peut installer un gestionnaire de logiciel sur Mac OS X pour aller chercher des fonctionnalités similaires à apt et yum.  Le plus populaire est Homebrew (http://brew.sh/)
 --
