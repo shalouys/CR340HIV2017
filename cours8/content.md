@@ -25,7 +25,7 @@ Le durcissement est le processus par lequel la configuration d'un système est m
 
 Utilisez le Vagrantfile du cours 8.  Ce Vagrantfile inclus une machine Ubuntu de base, avec l'ajout de quelques outils.  Veuillez:
 
-1) Choisir 7 contrôles du guide de durcissement d'Ubuntu du CIS
+1) Choisir 10 contrôles du guide de durcissement d'Ubuntu du CIS
 
 2) Appliquer ces contrôles à la machine Ubuntu
 
