@@ -57,21 +57,21 @@ Twitter: [@arsho](https://twitter.com/arsho)
 
 --
 ## Devoirs
-3 courts quiz à choix de réponse, donné 1 semaine avant la date de remise.  Ces devoirs correspondent aux sections importantes du cours
+3 courts quiz, de 10% chaque, à choix de réponse, donnés 1 semaine avant la date de remise.  Ces devoirs correspondent aux sections importantes du cours
 
 |Quiz|Date|
 |-----|-------|
-|1| 23 janvier|
-|2| 13 février|
-|3| 20 mars|
+|1| 15 septembre|
+|2| 6 octobre|
+|3| 10 novembre|
 --
 ## Travail de session
 
 Travail pratique à développement lié au laboratoire.
 
-**Présentation du travail**: 13 mars
+**Présentation du travail**: 17 novembre
 
-**Date de remise**: 10 avril
+**Date de remise**: 1er decembre
 
 
 *Note:  Date sujette à changement dépendant de l'évolution de la session *
@@ -88,7 +88,7 @@ Travail pratique à développement lié au laboratoire.
 * Groupe 01: Montréal
 * Groupe 11: Québec
 
-** Date de l'examen**: 24 avril
+** Date de l'examen**: 8 decembre
 
 --
 #Laboratoires
