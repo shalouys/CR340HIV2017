@@ -111,8 +111,7 @@ Plateforme de communication et de collaboration.
 
 Cette plateforme sera utilisée en remplacement des forums Moodle dans le cadre de ce cours.
 
-Inscription:  slack.cr340.patl.io
-
+Inscription:  https://slack.com/signin et tapez "CR340" dans le champs "your team url"
 Accès: cr340.slack.com
 --
 #Demo Slack
