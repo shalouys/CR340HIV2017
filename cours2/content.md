@@ -127,7 +127,7 @@ Trois méthodes existent pour installer des logiciels dans Windows:
 
 Max OS X existe seulement en version poste de travail, avec un module Serveur optionnel ajoutant certaines fonctionnalités.
 
-La version actuelle de Mac OS X est Sierra, 10.12.0
+La version actuelle de Mac OS X est 10.13 High Sierra
 
 Mac OS X suit un cycle de sortie d'un an.
 --
