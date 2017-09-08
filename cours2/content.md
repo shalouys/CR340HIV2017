@@ -81,15 +81,15 @@ Les installations manuelles dépendent de l'installation des bons outils de dév
 
 Les gestionnaires d'installation varient d'une distribution à l'autre.  Les plus populaires sont apt (Debian) et yum (Red Hat).
 --
-## Configuration de base (démo)
+## Configuration de base
 ---
 # Windows
 --
 ## Versions
 
 * Poste de travail: Windows 10
-* Serveur: Windows 2012 R2
-
+* Serveur: Windows 2016
+* IoT: Windows 10 IoT Core
 --
 ## Structure de répertoire
 
@@ -102,6 +102,8 @@ Les gestionnaires d'installation varient d'une distribution à l'autre.  Les plu
 La base de registre est utilisée pour stocker de l'information de configuration pour le système d'exploitation et les applications.
 
 La base de registre stocke des couples clé/valeur, où la clé est représentée dans une arborescence.  Les sections principales de l'arborescence sont:
+--
+## Base de registre
 
 * `HKEY_CLASSES_ROOT`: Description des classes de fichiers
 * `HKEY_LOCAL_MACHINE`: Configuration globale de la machine
@@ -117,11 +119,12 @@ Trois méthodes existent pour installer des logiciels dans Windows:
 * App Store:  Depuis Windows 8, Windows permet l'installation d'application gratuite et payant depuis son App Store.
 * Fonctionalités et rôles:  Dans Windows Server, l'installation des modules du système d'exploitation se font via l'ajout de fonctionnalité et de rôles dans Server Manager.
 --
-## Configuration de base (démo)
+## Configuration de base
 ---
 # MacOS X
 --
 ## Versions
+
 Max OS X existe seulement en version poste de travail, avec un module Serveur optionnel ajoutant certaines fonctionnalités.
 
 La version actuelle de Mac OS X est Sierra, 10.12.0
@@ -154,7 +157,7 @@ On peut installer des logiciels à travers l'app store.
 
 De manière additionnelle, on peut installer un gestionnaire de logiciel sur Mac OS X pour aller chercher des fonctionnalités similaires à apt et yum.  Le plus populaire est Homebrew (http://brew.sh/)
 --
-## Configuration de base (démo)
+## Configuration de base
 
 ---
 # Laboratoire
